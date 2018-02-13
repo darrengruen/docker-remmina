@@ -17,5 +17,5 @@ LABEL ${SCHEMA}.build-date=${BUILD_DATE} \
       ${SCHEMA}.vendor="gruen" \
       ${SCHEMA}.name="remmina" \
       ${SITE}.author="Darren Green <darren@gruen.site>" \
-      S{SITE}.tag="debian-jessie"
+      ${SITE}.tag="debian-jessie"
 
