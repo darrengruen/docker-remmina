@@ -1,4 +1,4 @@
-BUILD_DATE = $$(date -u +%F_%T_%Z)
+BUILD_DATE = $$(date -u +%FT%T.%S%Z)
 GIT_SHA = $$(git rev-parse --short HEAD)
 NAMESPACE = gruen
 IMAGE = remmina
