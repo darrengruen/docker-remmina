@@ -3,5 +3,5 @@
 docker build \
     --build-arg BUILD_DATE=$(date -u +%F_%T_%Z) \
     --build-arg GIT_SHA=${SOURCE_COMMIT} \
-    -t ${REPOSITORY} \
+    -t ${IMAGE_NAME} \
     .
