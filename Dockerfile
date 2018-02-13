@@ -9,11 +9,13 @@ RUN apt-get update \
 
 ARG BUILD_DATE
 ARG GIT_SHA
+ARG SCHEMA=org.label-schema
+ARG SITE=site.gruen
 
-LABEL org.label-schema.build-date=${BUILD_DATE} \
-      org.label-shema.vcs-ref=${GIT_SHA} \
-      org.label-schema.vendor="gruen" \
-      org.label-schema.name="remmina" \
-      site.gruen.author="Darren Green <darren@gruen.site>" \
-      site.gruen.tag="alpine:3.1"
+LABEL ${SCHEMA}.build-date=${BUILD_DATE} \
+      ${SCHEMA}.vcs-ref=${GIT_SHA} \
+      ${SCHEMA}.vendor="gruen" \
+      ${SCHEMA}.name="remmina" \
+      ${SITE}.author="Darren Green <darren@gruen.site>" \
+      S{SITE}.tag="debian-jessie"
 
